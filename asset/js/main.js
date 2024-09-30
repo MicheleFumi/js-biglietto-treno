@@ -26,11 +26,11 @@ let senior = (subtotal * 40) / 100;
 //LOGGHIAMO LE VARIABILI MENO LO SCONTO CALCOLATO PRIMA IN BASE ALLA CONDIZIONE NECESSARIA
 
 if (age < 18){
- console.log(subtotal - junior);
+ console.log((subtotal - junior).toFixed(2));
  
     
 }else if (age > 65){
-    console.log(subtotal - senior);
+    console.log((subtotal - senior).toFixed(2));
     
 }else{
     console.log(subtotal);
